@@ -1,15 +1,18 @@
 export class Finish
 {
 
-    password(value) {
+    password() {
 
-        cy.get('#firstpassword').type(value);
+        var pass = "11A2sd123"
+
+        cy.get('#firstpassword').type(pass);
 
     }
 
-    confirmPass (value)
+    confirmPass ()
     {
-        cy.get('#secondpassword').type(value);
+        var pass = "11A2sd123"
+        cy.get('#secondpassword').type(pass);
 
     }
 

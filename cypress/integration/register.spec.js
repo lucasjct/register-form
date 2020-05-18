@@ -32,8 +32,8 @@ describe ('Register Form', () => {
 
        const end = new Finish();
 
-        end.password('11A2sd123')
-        end.confirmPass('11A2sd123');
+        end.password()
+        end.confirmPass();
         end.submit()
            
     })
