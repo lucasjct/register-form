@@ -1,31 +1,40 @@
 /// <reference types ="cypress"/>
+
+import { Register } from "./page-object/register-page";
+import { BoxForm } from "./page-object/register-box";
+import { Finish } from "./page-object/register-finish";
  
 describe ('Register Form', () => {
-        
-    it('Personal Information', () => {
-        
-        cy.visit("http://demo.automationtesting.in/Register.html");
-        cy.get(':nth-child(1) > :nth-child(2) > .form-control', {timeout:6000}).type('Usuário');
-        cy.get(':nth-child(1) > :nth-child(3) > .form-control').type('LastName');
-        cy.get('#eid > .form-control').type('usuario@test.com');
-        cy.get(':nth-child(5) > .col-md-4 > :nth-child(2)').click();
-        cy.get(':nth-child(4) > .col-md-4 > .form-control').type('5558982321');
 
-})
-    it('Select Box', () => {
-        cy.get('#countries')
-            .select(['Brazil']);
-        cy.get('#yearbox')
-            .select(['1989']);
-        cy.get(':nth-child(11) > :nth-child(3) > .form-control')
-            .select(['August'])
-        cy.get('#daybox')
-            .select(['18']);
+    it('Personal Information', () => {
+
+        const form = new Register()
+
+        form.visit();
+        form.name("usuário");
+        form.secondName("tests");
+        form.email('usuario@tests.com');
+        form.gender();
+        form.phone('5558982321')
     })
 
-        it('Finish Form', () => {
-        cy.get('#firstpassword').type('1a23d4eA');
-        cy.get('#secondpassword').type('1a23d4eA');
-        cy.get('#submitbtn').click();
+    it('Select Box', () => {
+
+       const box = new BoxForm();
+
+       box.countries();
+       box.day();
+       box.month();
+       box.year();
+    })
+
+    it('Finish Form', () => {
+
+       const end = new Finish();
+
+        end.password('11A2sd123')
+        end.confirmPass('11A2sd123');
+        end.submit()
+           
     })
 })

@@ -4,7 +4,8 @@
   "description": "Preenchendo formulário com Cypress",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
