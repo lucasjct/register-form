@@ -9,11 +9,21 @@ export class Finish
 
     }
 
+    emptyPassword(){
+
+        cy.get('#firstpassword').should('be.empty');
+    }
+
     confirmPass ()
     {
         var pass = "11A2sd123"
         cy.get('#secondpassword').type(pass);
 
+    }
+
+    emptyConfirm()
+    {
+        cy.get('#secondpassword').should('be.empty');
     }
 
     submit()
@@ -25,5 +35,6 @@ export class Finish
     refresh()
     {
         cy.get('#Button1').click();
+
     }
 }
