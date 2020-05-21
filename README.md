@@ -1,7 +1,7 @@
 # register-form
 Formulário com Cypress-Cucumber   
 
-O teste valida três comportamentos: submeter formulário, limpar os campos e abrir diretorio do usuário.
+O teste valida três comportamentos: submeter formulário, limpar os campos e abrir diretorio do usuário.  
 
 ### Para rodar o projeto localmente:   
 
