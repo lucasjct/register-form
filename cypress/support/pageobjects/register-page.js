@@ -1,8 +1,10 @@
+const url = Cypress.config("baseUrl")
 export class Register {
+
 
     visit() {
 
-        cy.visit("http://demo.automationtesting.in/Register.html");
+        cy.visit(url);
     }
 
     name(value)

@@ -14,7 +14,12 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+/**
+ * @type {Cypress.PluginConfig}
+ */
+const cucumber = require('cypress-cucumber-preprocessor').default
+module.exports = (on, config) => {
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+  on('file:preprocessor', cucumber())
+
+}

@@ -7,6 +7,9 @@
     "cypress:open": "cypress open",
     "test": "cypress run"
   },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucasjct/register-form.git"
@@ -19,6 +22,10 @@
   },
   "homepage": "https://github.com/lucasjct/register-form#readme",
   "devDependencies": {
-    "cypress": "^4.5.0"
+    "cypress": "^4.5.0",
+    "cypress-cucumber-preprocessor": "^2.3.1"
+  },
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.11.0"
   }
 }
