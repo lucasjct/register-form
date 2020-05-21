@@ -14,7 +14,6 @@ describe('Abrir diretorio', () => {
 
         index.openIndex();
 
-
     })
 
     then("O arquivo local do usuário deve ser aberto", () => {

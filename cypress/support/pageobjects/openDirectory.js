@@ -10,6 +10,7 @@ export class AddFile {
     openIndex()
     {
         cy.get('#imagesrc').click();
+        cy.wait(3000);
     }
 
     localDirectory()
