@@ -1,5 +1,4 @@
 # Formulário com Cucumber  
-Validação com Cypress e Cucumber      
 
 O teste valida três comportamentos: submeter formulário, limpar os campos e abrir diretorio do usuário.  
 
