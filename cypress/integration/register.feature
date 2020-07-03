@@ -1,4 +1,4 @@
-Feature: Preencher Formulário, Limpar e Abrir Indexar
+Feature: Preencher Formulário, Limpar e Indexar
 
 @testeUm
 
