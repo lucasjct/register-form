@@ -32,6 +32,6 @@ module.exports = (on, config) => {
 }
 ```  
 
-* Na pasta `integration`, será escrito os *__Cenários de Teste__* em BDD, com a extensão> `<nome-do-arquivo>.feature`  
+* Na pasta `integration`, escreva os *__Cenários de Teste__* em BDD, com a extensão `<nome-do-arquivo>.feature`  
 * Crie a pasta`steps`dentro de `support`   
 * Escreva os testes com Cypress na pasta `steps` (com as exatas instruções do arquivo `.feature` da pasta integration)
