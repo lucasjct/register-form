@@ -16,16 +16,22 @@ O teste valida três comportamentos: submeter formulário, limpar os campos e ab
 
 ### Após instalado, seguir os seguintes passos:
 
-* Configurar o arquivo index.js no diretório: `cypress/plugins/index.js`, com o código abaixo:  
+* No package.json, cole a configuração do plugin:
 
 ```
-const cucumber = require('cypress-cucumber-preprocessor').default
+"cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  },
+```
+
+* Configurar o arquivo index.js no diretório: `cypress/plugins/index.js`, com o código abaixo:  
+```const cucumber = require('cypress-cucumber-preprocessor').default
 
 module.exports = (on, config) => {
   on('file:preprocessor', cucumber())
 }
 ```  
 
-* Na pasta `integration`,será escrito os *__Cenários de Teste__* em BDD, com a extensão> `<nome-do-arquivo>.feature`  
+* Na pasta `integration`, será escrito os *__Cenários de Teste__* em BDD, com a extensão> `<nome-do-arquivo>.feature`  
 * Crie a pasta`steps`dentro de `support`   
 * Escreva os testes com Cypress na pasta `steps` (com as exatas instruções do arquivo `.feature` da pasta integration)
