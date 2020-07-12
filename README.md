@@ -25,8 +25,8 @@ O teste valida três comportamentos: submeter formulário, limpar os campos e ab
 ```
 
 * Configurar o arquivo index.js no diretório: `cypress/plugins/index.js`, com o código abaixo:  
-```const cucumber = require('cypress-cucumber-preprocessor').default
-
+```
+const cucumber = require('cypress-cucumber-preprocessor').default
 module.exports = (on, config) => {
   on('file:preprocessor', cucumber())
 }
