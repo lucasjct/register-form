@@ -11,7 +11,8 @@ O teste valida três comportamentos: submeter formulário, limpar os campos e ab
 
 ### Como instalar e configurar Cypress com plugin do Cucumber:  
 
-* Instalar o plugin: `npm install --save-dev cypress-cucumber-preprocessor`  
+* Instalar o plugin: `npm install --save-dev cypress cypress-cucumber-preprocessor
+`  
 
 ### Após instalado, seguir os seguintes passos:
 
