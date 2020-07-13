@@ -11,7 +11,6 @@ O teste valida três comportamentos: submeter formulário, limpar os campos e ab
 
 ### Como instalar e configurar Cypress com plugin do Cucumber:  
 
-* Instalar o Cypress: `npm install --save-dev cypress`
 * Instalar o plugin: `npm install --save-dev cypress-cucumber-preprocessor`  
 
 ### Após instalado, seguir os seguintes passos:
@@ -32,6 +31,6 @@ module.exports = (on, config) => {
 }
 ```  
 
-* Na pasta `integration`, escreva os *__Cenários de Teste__* em BDD, com a extensão `<nome-do-arquivo>.feature`  
+* Na pasta `integration`, escreva os *__Cenários de Teste__* em BDD, em um arquivo com a extensão `<nome-do-arquivo>.feature`  
 * Crie a pasta`steps`dentro de `support`   
 * Escreva os testes com Cypress na pasta `steps` (com as exatas instruções do arquivo `.feature` da pasta integration)
