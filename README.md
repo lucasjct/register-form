@@ -2,6 +2,9 @@
 
 O teste valida três comportamentos: submeter formulário, limpar os campos e abrir diretorio do usuário.  
 
+
+![Cypress](cypress/image/img)
+
 ### Para rodar o projeto localmente:   
 
 *  Clonar o projeto 
